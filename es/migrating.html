@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Guía de migración | Guía de nuxt-i18n</title>
+    <meta name="description" content="i18n for Nuxt">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/nuxt-i18n/assets/css/0.styles.59cdd414.css" as="style"><link rel="preload" href="/nuxt-i18n/assets/js/app.a8f6d333.js" as="script"><link rel="preload" href="/nuxt-i18n/assets/js/2.1f25ded4.js" as="script"><link rel="preload" href="/nuxt-i18n/assets/js/19.ac312e3e.js" as="script"><link rel="prefetch" href="/nuxt-i18n/assets/js/10.6517b233.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/11.c6e3a5d8.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/12.962fd811.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/13.3af3dd43.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/14.f83205df.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/15.e89afd20.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/16.f06c8b6d.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/17.3cf7f189.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/18.b4ad9589.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/20.fbebb99c.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/21.491cfce9.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/22.deb4cf0d.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/23.3e3e2611.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/24.84c9befe.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/25.ed72e77e.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/26.18f73f35.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/27.93258ea7.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/28.5888c6e2.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/29.24ddc3a9.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/3.7d71934c.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/30.b8fd3559.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/31.760efd8a.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/32.9ec4b325.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/33.a2f96aea.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/4.ceaac7a4.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/5.57eb6aa0.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/6.1bcb1e46.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/7.e1da490a.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/8.a0624a78.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/9.0b79ce1e.js">
+    <link rel="stylesheet" href="/nuxt-i18n/assets/css/0.styles.59cdd414.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/nuxt-i18n/es/" class="home-link router-link-active"><!----> <span class="site-name">Guía de nuxt-i18n</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/nuxt-i18n/es/" class="nav-link">
+  Guía
+</a></div><div class="nav-item"><a href="/nuxt-i18n/es/api/" class="nav-link">
+  Referencias API
+</a></div><div class="nav-item"><a href="https://github.com/nuxt-community/nuxt-i18n/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Notas de la versión
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Idiomas</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/nuxt-i18n/migrating.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/nuxt-i18n/es/migrating.html" class="nav-link router-link-exact-active router-link-active">
+  Español
+</a></li></ul></div></div> <a href="https://github.com/nuxt-community/nuxt-i18n" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/nuxt-i18n/es/" class="nav-link">
+  Guía
+</a></div><div class="nav-item"><a href="/nuxt-i18n/es/api/" class="nav-link">
+  Referencias API
+</a></div><div class="nav-item"><a href="https://github.com/nuxt-community/nuxt-i18n/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Notas de la versión
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Idiomas</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/nuxt-i18n/migrating.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/nuxt-i18n/es/migrating.html" class="nav-link router-link-exact-active router-link-active">
+  Español
+</a></li></ul></div></div> <a href="https://github.com/nuxt-community/nuxt-i18n" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guía</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/nuxt-i18n/es/" class="sidebar-link">Introducción</a></li><li><a href="/nuxt-i18n/es/setup.html" class="sidebar-link">Configuración</a></li><li><a href="/nuxt-i18n/es/basic-usage.html" class="sidebar-link">Uso Básico</a></li><li><a href="/nuxt-i18n/es/options-reference.html" class="sidebar-link">Opciones</a></li><li><a href="/nuxt-i18n/es/callbacks.html" class="sidebar-link">Callbacks</a></li><li><a href="/nuxt-i18n/es/routing.html" class="sidebar-link">Enrutamiento</a></li><li><a href="/nuxt-i18n/es/browser-language-detection.html" class="sidebar-link">Detectar idioma del navegador</a></li><li><a href="/nuxt-i18n/es/seo.html" class="sidebar-link">Optimización para motores de búsqueda</a></li><li><a href="/nuxt-i18n/es/lazy-load-translations.html" class="sidebar-link">Carga diferida de traducciones</a></li><li><a href="/nuxt-i18n/es/lang-switcher.html" class="sidebar-link">Selector de idiomas</a></li><li><a href="/nuxt-i18n/es/different-domains.html" class="sidebar-link">Diferentes dominios</a></li><li><a href="/nuxt-i18n/es/vue-i18n-loader.html" class="sidebar-link">vue-i18n-loader</a></li><li><a href="/nuxt-i18n/es/migrating.html" class="active sidebar-link">Migración</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/nuxt-i18n/es/migrating.html#actualizacion-de-5-x-a-6-x" class="sidebar-link">Actualización de 5.x a 6.x</a></li><li class="sidebar-sub-header"><a href="/nuxt-i18n/es/migrating.html#actualizacion-de-4-x-a-5-x" class="sidebar-link">Actualización de 4.x a 5.x</a></li><li class="sidebar-sub-header"><a href="/nuxt-i18n/es/migrating.html#actualizacion-de-3-x-a-4-x" class="sidebar-link">Actualización de 3.x a 4.x</a></li><li class="sidebar-sub-header"><a href="/nuxt-i18n/es/migrating.html#actualizacion-de-2-x-a-3-x" class="sidebar-link">Actualización de 2.x a 3.x</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="guia-de-migracion"><a href="#guia-de-migracion" class="header-anchor">#</a> Guía de migración</h1> <p>Siga esta guía para actualizar de una versión principal a otra.</p> <h2 id="actualizacion-de-5-x-a-6-x"><a href="#actualizacion-de-5-x-a-6-x" class="header-anchor">#</a> Actualización de 5.x a 6.x</h2> <h3 id="las-funciones-globales-de-seo-ahora-estan-deshabilitadas-por-defecto"><a href="#las-funciones-globales-de-seo-ahora-estan-deshabilitadas-por-defecto" class="header-anchor">#</a> Las funciones globales de SEO ahora están deshabilitadas por defecto</h3> <p>En algunos casos, tener SEO habilitado globalmente causó problemas de rendimiento y / o entró en conflicto con otros complementos. Para mitigar estos problemas, las características de SEO ahora están deshabilitadas de forma predeterminada.</p> <p>Si se vio afectado por uno de los problemas anteriores, le recomendamos que lea la sección <a href="https://nuxt-community.github.io/nuxt-i18n/seo.html#improving-performance" target="_blank" rel="noopener noreferrer">Mejorar el rendimiento<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> para habilitar el SEO solo donde lo necesites.</p> <p>Si desea restaurar el comportamiento anterior, puede habilitar las funciones de SEO a nivel mundial estableciendo la opción <code>seo</code> en <code>true</code>:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  seo<span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="ya-no-se-puede-configurar-preservestate"><a href="#ya-no-se-puede-configurar-preservestate" class="header-anchor">#</a> Ya no se puede configurar preserveState</h3> <p>Anteriormente era posible configurar manualmente <code>preserveState</code> en el módulo de tienda de <strong>nuxt-i18n</strong>, lo que en realidad daría lugar a comportamientos inesperados al usar la representación del lado del servidor. Esta opción se ha eliminado por completo y la opción <code>preserveState</code> del módulo ahora está <a href="https://github.com/nuxt-community/nuxt-i18n/blob/05e9d1f80715cc23a545adf4303e49af3ee40ac3/src/plugins/main.js#L77" target="_blank" rel="noopener noreferrer">establecida automáticamente<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</p> <p>Si estaba utilizando la opción de configuración <code>preserveState</code> anteriormente, puede eliminarse de manera segura:</p> <div class="language-patch extra-class"><pre class="language-text"><code> {
+   vuex: {
+-    preserveState: true,
+     // other configuration options
+   }
+ }
+</code></pre></div><h3 id="las-opciones-del-modulo-de-almacenamiento-se-han-aplanado-y-renombrado"><a href="#las-opciones-del-modulo-de-almacenamiento-se-han-aplanado-y-renombrado" class="header-anchor">#</a> Las opciones del módulo de almacenamiento se han aplanado y renombrado</h3> <p>La opción de configuración <code>vuex</code> se usa para exponer una propiedad <code>mutations</code> donde cada mutación se puede deshabilitar o renombrar. Por el bien de la simplicidad, ya no es posible cambiar el nombre de estas mutaciones, la propiedad <code>mutations</code> se ha eliminado para aplanar la configuración y se ha cambiado el nombre de cada opción para reflejar mejor lo que hace.</p> <div class="language-patch extra-class"><pre class="language-text"><code> {
+   vuex: {
+-    mutations: {
+-      setLocale: 'SET_LOCALE_MUTATION',
+-      setMessages: 'SET_MESSAGE_MUTATION',
+-      setRouteParams: 'SET_ROUTE_PARAMS_MUTATION'
+-    }
++    syncLocale: true,
++    syncMessages: true,
++    syncRouteParams: true
+   },
+ }
+</code></pre></div><h2 id="actualizacion-de-4-x-a-5-x"><a href="#actualizacion-de-4-x-a-5-x" class="header-anchor">#</a> Actualización de 4.x a 5.x</h2> <p>Consulte <a href="https://github.com/kazupon/vue-i18n/blob/dev/CHANGELOG.md#800-2018-06-23" target="_blank" rel="noopener noreferrer"><strong>vue-i18n</strong> registro de cambios<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> para obtener más información sobre cambios de última hora en <strong>nuxt-i18n 5.x</strong>.</p> <h2 id="actualizacion-de-3-x-a-4-x"><a href="#actualizacion-de-3-x-a-4-x" class="header-anchor">#</a> Actualización de 3.x a 4.x</h2> <h3 id="opciones-de-clave-in-component"><a href="#opciones-de-clave-in-component" class="header-anchor">#</a> Opciones de clave in-component</h3> <p>v4.x introduce un solo cambio que requiere que cambie el nombre de la clave <code>i18n</code> a <code>nuxtI18n</code> en sus páginas que usan la configuración en componentes, esto debería evitar conflictos con vue-i18n.</p> <p><strong>3.x:</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// pages/about.vue</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  i18n<span class="token operator">:</span> <span class="token punctuation">{</span>
+    paths<span class="token operator">:</span> <span class="token punctuation">{</span>
+      fr<span class="token operator">:</span> <span class="token string">'/a-propos'</span><span class="token punctuation">,</span>
+      en<span class="token operator">:</span> <span class="token string">'/about-us'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>4.x:</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// pages/about.vue</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  nuxtI18n<span class="token operator">:</span> <span class="token punctuation">{</span>
+    paths<span class="token operator">:</span> <span class="token punctuation">{</span>
+      fr<span class="token operator">:</span> <span class="token string">'/a-propos'</span><span class="token punctuation">,</span>
+      en<span class="token operator">:</span> <span class="token string">'/about-us'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="actualizacion-de-2-x-a-3-x"><a href="#actualizacion-de-2-x-a-3-x" class="header-anchor">#</a> Actualización de 2.x a 3.x</h2> <h3 id="rutas-personalizadas"><a href="#rutas-personalizadas" class="header-anchor">#</a> Rutas personalizadas</h3> <p>La opción <code>routes</code> se ha descartado a favor de la configuración en componentes, cualquier configuración de ruta personalizada debe colocarse en su archivo de página correspondiente.</p> <p><strong>2.x:</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// nuxt.config.js</span>
+
+<span class="token punctuation">{</span>
+  modules<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'nuxt-i18n'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      routes<span class="token operator">:</span> <span class="token punctuation">{</span>
+        about<span class="token operator">:</span> <span class="token punctuation">{</span>
+          fr<span class="token operator">:</span> <span class="token string">'/a-propos'</span><span class="token punctuation">,</span>
+          en<span class="token operator">:</span> <span class="token string">'/about-us'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>3.x:</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// pages/about.vue</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  i18n<span class="token operator">:</span> <span class="token punctuation">{</span>
+    paths<span class="token operator">:</span> <span class="token punctuation">{</span>
+      fr<span class="token operator">:</span> <span class="token string">'/a-propos'</span><span class="token punctuation">,</span>
+      en<span class="token operator">:</span> <span class="token string">'/about-us'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="rutas-ignoradas"><a href="#rutas-ignoradas" class="header-anchor">#</a> Rutas ignoradas</h3> <p>La opción <code>ignorePaths</code> también se ha eliminado, su comportamiento se puede reproducir configurando <code>i18n</code> en <code>false</code> en sus páginas.</p> <p><strong>2.x:</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// nuxt.config.js</span>
+
+<span class="token punctuation">{</span>
+  modules<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'nuxt-i18n'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      ignorePaths<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'/fr/notlocalized'</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>3.x:</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// pages/fr/notlocalized.vue</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  i18n<span class="token operator">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="noprefixdefaultlocale"><a href="#noprefixdefaultlocale" class="header-anchor">#</a> noPrefixDefaultLocale</h3> <p>El <code>noPrefixDefaultLocale</code> se ha descartado en favor de la opción <code>strategy</code>.</p> <p><strong>2.x:</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// nuxt.config.js</span>
+
+<span class="token punctuation">{</span>
+  modules<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'nuxt-i18n'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      noPrefixDefaultLocale<span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>3.x:</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// nuxt.config.js</span>
+
+<span class="token punctuation">{</span>
+  modules<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'nuxt-i18n'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      strategy<span class="token operator">:</span> <span class="token string">'prefix'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="loadlanguagesasync"><a href="#loadlanguagesasync" class="header-anchor">#</a> loadLanguagesAsync</h3> <p>La opción <code>loadLanguagesAsync</code> ha cambiado de nombre a <code>lazy</code>. La opción  <code>langFile</code> en <code>locales</code> ha cambiado de nombre a <code>file</code>.</p> <h3 id="redirectcookiekey-useredirectcookie"><a href="#redirectcookiekey-useredirectcookie" class="header-anchor">#</a> redirectCookieKey &amp; useRedirectCookie</h3> <p><code>redirectCookieKey</code> y <code>useRedirectCookie</code> se han fusionado en la opción <code>detectBrowserLanguage</code> y han cambiado el nombre a <code>cookieKey</code> y <code>useCookie</code> respectivamente.</p> <p><strong>2.x:</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// nuxt.config.js</span>
+
+<span class="token punctuation">{</span>
+  modules<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'nuxt-i18n'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      detectBrowserLanguage<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      redirectCookieKey<span class="token operator">:</span> <span class="token string">'redirected'</span><span class="token punctuation">,</span>
+      useRedirectCookie<span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>3.x:</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// nuxt.config.js</span>
+
+<span class="token punctuation">{</span>
+  modules<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'nuxt-i18n'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      detectBrowserLanguage<span class="token operator">:</span> <span class="token punctuation">{</span>
+        cookieKey<span class="token operator">:</span> <span class="token string">'redirected'</span><span class="token punctuation">,</span>
+        useCookie<span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/nuxt-community/nuxt-i18n/edit/master/docs/es/migrating.md" target="_blank" rel="noopener noreferrer">Edite esta página en GitHub</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/nuxt-i18n/es/vue-i18n-loader.html" class="prev">
+        vue-i18n-loader
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/nuxt-i18n/assets/js/app.a8f6d333.js" defer></script><script src="/nuxt-i18n/assets/js/2.1f25ded4.js" defer></script><script src="/nuxt-i18n/assets/js/19.ac312e3e.js" defer></script>
+  </body>
+</html>

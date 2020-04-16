@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Enrutamiento | Guía de nuxt-i18n</title>
+    <meta name="description" content="i18n for Nuxt">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/nuxt-i18n/assets/css/0.styles.59cdd414.css" as="style"><link rel="preload" href="/nuxt-i18n/assets/js/app.a8f6d333.js" as="script"><link rel="preload" href="/nuxt-i18n/assets/js/2.1f25ded4.js" as="script"><link rel="preload" href="/nuxt-i18n/assets/js/21.491cfce9.js" as="script"><link rel="prefetch" href="/nuxt-i18n/assets/js/10.6517b233.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/11.c6e3a5d8.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/12.962fd811.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/13.3af3dd43.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/14.f83205df.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/15.e89afd20.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/16.f06c8b6d.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/17.3cf7f189.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/18.b4ad9589.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/19.ac312e3e.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/20.fbebb99c.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/22.deb4cf0d.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/23.3e3e2611.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/24.84c9befe.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/25.ed72e77e.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/26.18f73f35.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/27.93258ea7.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/28.5888c6e2.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/29.24ddc3a9.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/3.7d71934c.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/30.b8fd3559.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/31.760efd8a.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/32.9ec4b325.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/33.a2f96aea.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/4.ceaac7a4.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/5.57eb6aa0.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/6.1bcb1e46.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/7.e1da490a.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/8.a0624a78.js"><link rel="prefetch" href="/nuxt-i18n/assets/js/9.0b79ce1e.js">
+    <link rel="stylesheet" href="/nuxt-i18n/assets/css/0.styles.59cdd414.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/nuxt-i18n/es/" class="home-link router-link-active"><!----> <span class="site-name">Guía de nuxt-i18n</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/nuxt-i18n/es/" class="nav-link">
+  Guía
+</a></div><div class="nav-item"><a href="/nuxt-i18n/es/api/" class="nav-link">
+  Referencias API
+</a></div><div class="nav-item"><a href="https://github.com/nuxt-community/nuxt-i18n/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Notas de la versión
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Idiomas</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/nuxt-i18n/routing.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/nuxt-i18n/es/routing.html" class="nav-link router-link-exact-active router-link-active">
+  Español
+</a></li></ul></div></div> <a href="https://github.com/nuxt-community/nuxt-i18n" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/nuxt-i18n/es/" class="nav-link">
+  Guía
+</a></div><div class="nav-item"><a href="/nuxt-i18n/es/api/" class="nav-link">
+  Referencias API
+</a></div><div class="nav-item"><a href="https://github.com/nuxt-community/nuxt-i18n/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Notas de la versión
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Idiomas</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/nuxt-i18n/routing.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/nuxt-i18n/es/routing.html" class="nav-link router-link-exact-active router-link-active">
+  Español
+</a></li></ul></div></div> <a href="https://github.com/nuxt-community/nuxt-i18n" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guía</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/nuxt-i18n/es/" class="sidebar-link">Introducción</a></li><li><a href="/nuxt-i18n/es/setup.html" class="sidebar-link">Configuración</a></li><li><a href="/nuxt-i18n/es/basic-usage.html" class="sidebar-link">Uso Básico</a></li><li><a href="/nuxt-i18n/es/options-reference.html" class="sidebar-link">Opciones</a></li><li><a href="/nuxt-i18n/es/callbacks.html" class="sidebar-link">Callbacks</a></li><li><a href="/nuxt-i18n/es/routing.html" class="active sidebar-link">Enrutamiento</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/nuxt-i18n/es/routing.html#estrategia" class="sidebar-link">Estrategia</a></li><li class="sidebar-sub-header"><a href="/nuxt-i18n/es/routing.html#rutas-personalizadas" class="sidebar-link">Rutas personalizadas</a></li><li class="sidebar-sub-header"><a href="/nuxt-i18n/es/routing.html#ignorar-rutas" class="sidebar-link">Ignorar rutas</a></li></ul></li><li><a href="/nuxt-i18n/es/browser-language-detection.html" class="sidebar-link">Detectar idioma del navegador</a></li><li><a href="/nuxt-i18n/es/seo.html" class="sidebar-link">Optimización para motores de búsqueda</a></li><li><a href="/nuxt-i18n/es/lazy-load-translations.html" class="sidebar-link">Carga diferida de traducciones</a></li><li><a href="/nuxt-i18n/es/lang-switcher.html" class="sidebar-link">Selector de idiomas</a></li><li><a href="/nuxt-i18n/es/different-domains.html" class="sidebar-link">Diferentes dominios</a></li><li><a href="/nuxt-i18n/es/vue-i18n-loader.html" class="sidebar-link">vue-i18n-loader</a></li><li><a href="/nuxt-i18n/es/migrating.html" class="sidebar-link">Migración</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="enrutamiento"><a href="#enrutamiento" class="header-anchor">#</a> Enrutamiento</h1> <p><strong>nuxt-i18n</strong> anula las rutas predeterminadas de Nuxt para agregar prefijos de configuración local a cada URL (excepto en la estrategia no_prefix). Digamos que su aplicación admite dos idiomas: francés e inglés como idioma predeterminado, y tiene las siguientes páginas en su proyecto:</p> <div class="language-asciidoc extra-class"><pre class="language-asciidoc"><code>pages/
+├── index.vue
+├── about.vue
+</code></pre></div><p>Esto daría como resultado que se generen las siguientes rutas</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">&quot;/&quot;</span><span class="token punctuation">,</span>
+    component<span class="token operator">:</span> _3237362a<span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;index___en&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">&quot;/fr/&quot;</span><span class="token punctuation">,</span>
+    component<span class="token operator">:</span> _3237362a<span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;index___fr&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">&quot;/about&quot;</span><span class="token punctuation">,</span>
+    component<span class="token operator">:</span> _71a6ebb4<span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;about___en&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">&quot;/fr/about&quot;</span><span class="token punctuation">,</span>
+    component<span class="token operator">:</span> _71a6ebb4<span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;about___fr&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>Tenga en cuenta que las rutas para la versión en inglés no tienen ningún prefijo porque es el idioma predeterminado; consulte la siguiente sección para obtener más detalles.</p> <h2 id="estrategia"><a href="#estrategia" class="header-anchor">#</a> Estrategia</h2> <p>Existen cuatro estrategias compatibles para generar las rutas de la aplicación:</p> <h3 id="no-prefix"><a href="#no-prefix" class="header-anchor">#</a> no_prefix</h3> <blockquote><p>🆕 6.1.0</p></blockquote> <p>Con esta estrategia, sus rutas no tendrán un prefijo de configuración local agregado. La configuración local se detectará y cambiará sin cambiar la URL. Esto implica que debe confiar en la detección del navegador y las cookies, e implementar interruptores locales llamando a la API i18n.</p> <div class="custom-block warning"><p class="custom-block-title">ADVERTENCIA</p> <p>Esta estrategia no es compatible con las  <a href="#custom-paths">Rutas personalizadas</a> y las funciones <a href="#ignore-routes">Ignorar rutas</a>.</p></div> <h3 id="prefix-except-default"><a href="#prefix-except-default" class="header-anchor">#</a> prefix_except_default</h3> <p>Con esta estrategia, todas sus rutas tendrán un prefijo de configuración local agregado, excepto el idioma predeterminado.</p> <h3 id="prefix"><a href="#prefix" class="header-anchor">#</a> prefix</h3> <p>Con esta estrategia, todas las rutas tendrán un prefijo de configuración local.</p> <h3 id="prefix-and-default"><a href="#prefix-and-default" class="header-anchor">#</a> prefix_and_default</h3> <p>Esta estrategia combina los comportamientos de ambas estrategias anteriores, lo que significa que obtendrá URL con prefijos para cada idioma, pero las URL para el idioma predeterminado también tendrán una versión sin prefijo.</p> <p>Para configurar la estrategia, use la opción <code>strategy</code>. Asegúrese de tener un <code>defaultLocale</code> definido si usa <strong>prefix_except_default</strong>, <strong>prefix_and_default</strong> o la estrategia <strong>no_prefix</strong>.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// nuxt.config.js</span>
+
+<span class="token punctuation">[</span><span class="token string">'nuxt-i18n'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  strategy<span class="token operator">:</span> <span class="token string">'prefix_except_default'</span><span class="token punctuation">,</span>
+  defaultLocale<span class="token operator">:</span> <span class="token string">'en'</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h2 id="rutas-personalizadas"><a href="#rutas-personalizadas" class="header-anchor">#</a> Rutas personalizadas</h2> <p>En algunos casos, es posible que desee traducir las URL además de tener el prefijo con el código de configuración regional. Hay 2 formas de configurar rutas personalizadas para sus páginas: opciones <code>in-component</code> o mediante la configuración del módulo.</p> <h3 id="opciones-in-component"><a href="#opciones-in-component" class="header-anchor">#</a> Opciones in-component</h3> <p>Agregue una propiedad <code>nuxtI18n.paths</code> a su página y configure sus rutas personalizadas allí:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// pages/about.vue</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  nuxtI18n<span class="token operator">:</span> <span class="token punctuation">{</span>
+    paths<span class="token operator">:</span> <span class="token punctuation">{</span>
+      en<span class="token operator">:</span> <span class="token string">'/about-us'</span><span class="token punctuation">,</span> <span class="token comment">// -&gt; accessible at /about-us (no prefix since it's the default locale)</span>
+      fr<span class="token operator">:</span> <span class="token string">'/a-propos'</span><span class="token punctuation">,</span> <span class="token comment">// -&gt; accessible at /fr/a-propos</span>
+      es<span class="token operator">:</span> <span class="token string">'/sobre'</span>     <span class="token comment">// -&gt; accessible at /es/sobre</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Para configurar una ruta personalizada para una ruta dinámica, debe colocar los parámetros en el URI de forma similar a como lo haría en vue-router.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// pages/articles/_name.vue</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  nuxtI18n<span class="token operator">:</span> <span class="token punctuation">{</span>
+    paths<span class="token operator">:</span> <span class="token punctuation">{</span>
+      en<span class="token operator">:</span> <span class="token string">'/articles/:name'</span><span class="token punctuation">,</span>
+      es<span class="token operator">:</span> <span class="token string">'/artículo/:name'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="configuracion-del-modulo"><a href="#configuracion-del-modulo" class="header-anchor">#</a> Configuración del módulo</h3> <p>Asegúrese de establecer la opción  <code>parsePages</code> en <code>false</code> para deshabilitar el análisis de babel y agregar sus rutas personalizadas en la opción  <code>pages</code>:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// nuxt.config.js</span>
+
+<span class="token punctuation">[</span><span class="token string">'nuxt-i18n'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  parsePages<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>   <span class="token comment">// Disable babel parsing</span>
+  pages<span class="token operator">:</span> <span class="token punctuation">{</span>
+    about<span class="token operator">:</span> <span class="token punctuation">{</span>
+      en<span class="token operator">:</span> <span class="token string">'/about-us'</span><span class="token punctuation">,</span> <span class="token comment">// -&gt; accessible at /about-us (no prefix since it's the default locale)</span>
+      fr<span class="token operator">:</span> <span class="token string">'/a-propos'</span><span class="token punctuation">,</span> <span class="token comment">// -&gt; accessible at /fr/a-propos</span>
+      es<span class="token operator">:</span> <span class="token string">'/sobre'</span>     <span class="token comment">// -&gt; accessible at /es/sobre</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><p>Tenga en cuenta que cada clave en el objeto <code>pages</code> debe corresponder a la ruta completa del archivo en su directorio <code>pages/</code>.</p> <p>Asegúrese de que todas las llaves:</p> <ol><li>Son relativos al directorio <code>pages/</code> y no comienzan con un <code>/</code></li> <li>Apunte directamente a su archivo correspondiente sin <code>.vue</code> (asegúrese de agregar <code>/index</code> al traducir las rutas raíz)</li></ol> <p>Las rutas localizadas son URI completos, así que tenga en cuenta que:</p> <ol><li>Necesitan comenzar con u <code>/</code></li> <li>Debe repetir el URI completo para cada ruta secundaria</li></ol> <h4 id="ejemplo-1"><a href="#ejemplo-1" class="header-anchor">#</a> Ejemplo 1</h4> <p>Digamos que tiene alguna página anidada como:</p> <div class="language-asciidoc extra-class"><pre class="language-asciidoc"><code>pages/
+├── _nested/
+├──── _route/
+├────── index.vue
+</code></pre></div><p>Así es como configuraría esta página en particular en la configuración:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// nuxt.config.js</span>
+
+<span class="token punctuation">[</span><span class="token string">'nuxt-i18n'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  parsePages<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  pages<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'_nested/_route/index'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      en<span class="token operator">:</span> <span class="token string">'/mycustompath/:nested/:route?'</span> <span class="token comment">// Params need to be put back here as you would with vue-router</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h4 id="ejemplo-2"><a href="#ejemplo-2" class="header-anchor">#</a> Ejemplo 2</h4> <p>Con el siguiente directorio  <code>pages</code>:</p> <div class="language-asciidoc extra-class"><pre class="language-asciidoc"><code>pages/
+├── about.vue
+├── services/
+├──── index.vue
+├──── development/
+├────── index.vue
+├────── app/
+├──────── index.vue
+├────── website/
+├──────── index.vue
+├──── coaching/
+├────── index.vue
+</code></pre></div><p>Debería configurar su propiedad <code>pages</code> de la siguiente manera:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// nuxt.config.js</span>
+
+<span class="token punctuation">[</span><span class="token string">'nuxt-i18n'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  parsePages<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  pages<span class="token operator">:</span> <span class="token punctuation">{</span>
+    about<span class="token operator">:</span> <span class="token punctuation">{</span>
+      en<span class="token operator">:</span> <span class="token string">'/about'</span><span class="token punctuation">,</span>
+      fr<span class="token operator">:</span> <span class="token string">'/a-propos'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'services/index'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      en<span class="token operator">:</span> <span class="token string">'/services'</span><span class="token punctuation">,</span>
+      fr<span class="token operator">:</span> <span class="token string">'/offres'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'services/development/index'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      en<span class="token operator">:</span> <span class="token string">'/services/development'</span><span class="token punctuation">,</span>
+      fr<span class="token operator">:</span> <span class="token string">'/offres/developement'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'services/development/app/index'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      en<span class="token operator">:</span> <span class="token string">'/services/development/app'</span><span class="token punctuation">,</span>
+      fr<span class="token operator">:</span> <span class="token string">'/offres/developement/app'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'services/development/website/index'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      en<span class="token operator">:</span> <span class="token string">'/services/development/website'</span><span class="token punctuation">,</span>
+      fr<span class="token operator">:</span> <span class="token string">'/offres/developement/site-web'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'services/coaching/index'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      en<span class="token operator">:</span> <span class="token string">'/services/coaching'</span><span class="token punctuation">,</span>
+      fr<span class="token operator">:</span> <span class="token string">'/offres/formation'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><p>Si falta una ruta personalizada para una de las configuraciones locales, se usa la ruta personalizada <code>defaultLocale</code> si está establecida..</p> <h3 id="expresion-regular"><a href="#expresion-regular" class="header-anchor">#</a> Expresión regular</h3> <p>Por defecto, todas las rutas personalizadas están codificadas para manejar caracteres no latinos en la ruta. Esto convertirá rutas con expresiones regulares como <code>/foo/:slug-:id(\\d+)</code> a <code>/foo/:slug-:id(%5Cd+)</code>.</p> <p>Si desea utilizar expresiones regulares en sus rutas personalizadas, debe establecer la opción  <code>encodePaths</code> en false. Como no ocurrirá ninguna codificación, deberá asegurarse de pasar las rutas codificadas usted mismo.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// nuxt.config.js</span>
+
+<span class="token punctuation">[</span><span class="token string">'nuxt-i18n'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  encodePaths<span class="token operator">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h2 id="ignorar-rutas"><a href="#ignorar-rutas" class="header-anchor">#</a> Ignorar rutas</h2> <h3 id="opciones-in-component-2"><a href="#opciones-in-component-2" class="header-anchor">#</a> Opciones in-component</h3> <p>Si desea que alguna página esté disponible solo para algunos idiomas, puede configurar una lista de idiomas compatibles para anular la configuración global:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// pages/about.vue</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  nuxtI18n<span class="token operator">:</span> <span class="token punctuation">{</span>
+    locales<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'fr'</span><span class="token punctuation">,</span> <span class="token string">'es'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Para deshabilitar completamente i18n en una página determinada:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// pages/about.vue</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  nuxtI18n<span class="token operator">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="configuracion-del-modulo-2"><a href="#configuracion-del-modulo-2" class="header-anchor">#</a> Configuración del módulo</h3> <p>Si deshabilitó la opción <code>parsePages</code>, la localización puede deshabilitarse para páginas y configuraciones locales específicas configurando las configuraciones locales no deseadas en <code>false</code> en la configuración del módulo:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// nuxt.config.js</span>
+
+<span class="token punctuation">[</span><span class="token string">'nuxt-i18n'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  parsePages<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  pages<span class="token operator">:</span> <span class="token punctuation">{</span>
+    about<span class="token operator">:</span> <span class="token punctuation">{</span>
+      en<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><p>Para deshabilitar completamente la localización de rutas en una página determinada:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// nuxt.config.js</span>
+
+<span class="token punctuation">[</span><span class="token string">'nuxt-i18n'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  parsePages<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  pages<span class="token operator">:</span> <span class="token punctuation">{</span>
+    about<span class="token operator">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/nuxt-community/nuxt-i18n/edit/master/docs/es/routing.md" target="_blank" rel="noopener noreferrer">Edite esta página en GitHub</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/nuxt-i18n/es/callbacks.html" class="prev">
+        Callbacks
+      </a></span> <span class="next"><a href="/nuxt-i18n/es/browser-language-detection.html">
+        Detectar idioma del navegador
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/nuxt-i18n/assets/js/app.a8f6d333.js" defer></script><script src="/nuxt-i18n/assets/js/2.1f25ded4.js" defer></script><script src="/nuxt-i18n/assets/js/21.491cfce9.js" defer></script>
+  </body>
+</html>
